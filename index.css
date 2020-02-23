@@ -1,0 +1,11 @@
+#frame1{
+    border-style: none;
+    width: 70vw;
+    height: 100vh;
+    display: block;
+    margin: auto;
+}
+
+p{
+    background-color: red;
+}
