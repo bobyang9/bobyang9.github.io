@@ -1,3 +1,7 @@
+body{
+    overflow:hidden;
+}
+
 #frame1{
     border-style: none;
     width: 70vw;
