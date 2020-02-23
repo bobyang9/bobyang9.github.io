@@ -199,6 +199,7 @@ span:hover{
     display: flex;
     overflow: auto;
     justify-content: center;
+    overflow: hidden;
 }
 
 .section2_inside_flex{
@@ -289,7 +290,7 @@ span:hover{
    display: flex;
    overflow: auto;
    justify-content: center;
-   overflow:hidden;
+   overflow: hidden;
 }
 
 .section3_inside_flex{
@@ -397,6 +398,7 @@ span:hover{
    display: flex;
    overflow: auto;
    justify-content: center;
+   overflow: hidden;
 }
 
 .section4_inside_flex{
@@ -467,6 +469,7 @@ span:hover{
     display: flex;
     overflow: auto;
     justify-content: center;
+    overflow: hidden;
 }
 
 .section5_inside_flex{
@@ -540,6 +543,7 @@ span:hover{
    display: flex;
    overflow: auto;
    justify-content: center;
+   overflow: hidden;
 }
 
 .section6_inside_flex{
@@ -662,6 +666,7 @@ span:hover{
    display: flex;
    overflow: auto;
    justify-content: center;
+   overflow: hidden;
 }
 
 .section7_inside_flex{
@@ -759,6 +764,7 @@ span:hover{
    display: flex;
    overflow: auto;
    justify-content: center;
+   overflow: hidden;
 }
 
 .section8_inside_flex{
