@@ -1,0 +1,823 @@
+@font-face {
+font-family: 'DengXian Regular';
+font-style: normal;
+font-weight: normal;
+src: local('DengXian Regular'), url('Deng.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'DengXian Light';
+font-style: normal;
+font-weight: normal;
+src: local('DengXian Light'), url('Dengl.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'DengXian Bold';
+font-style: normal;
+font-weight: normal;
+src: local('DengXian Bold'), url('Dengb.woff') format('woff');
+}
+
+/*
+ * -----------------BODY (GENERAL) SECTION-----------------
+ */
+
+body{
+    font-family:'DengXian Regular';
+    font-weight: normal;
+    background-image: linear-gradient(#aaffff, #ffaaff);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+ * -----------------ELEMENT SECTION-----------------
+ */
+
+h1{
+    font-weight: 100;
+    text-align: center;
+    font-size: 4.7vw;
+}
+
+ul{
+    margin: 0;
+    margin-top: -1vh;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.68vw;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    padding: .2em 1em;
+}
+
+li:hover{
+    color: blue;
+    font-weight: 500;
+}
+
+span:hover{
+    color: blue;
+    border-style: solid;
+    border-color: #0c0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+/*
+ * -----------------SECTION SECTION-----------------
+ */
+
+#section1{
+    font-weight: 100;
+    text-align: center;
+    font-size: 2.86vw;
+    height: 24vw;
+    padding-top: 2.5vw;
+    padding-left: 0vw;
+    padding-right: 5.3vw;
+    padding-bottom: 4.5vw;
+}
+
+#section2{
+  /*border-style: solid;
+  border-color: #0c0;*/
+  padding-top: 16vw;
+}
+
+.section_class{
+  background-image: linear-gradient(rgba(100, 255, 235, 0.3), #eebbff);
+}
+
+/*
+ * -----------------HEADERS SECTION-----------------
+ */
+
+#section1_header{
+    z-index: 2;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2.86vw;
+    height: 3.5vw;
+    padding-top: 7.5vw;
+    padding-left: 9vw;
+    padding-right: 5.3vw;
+    padding-bottom: 6vw;
+}
+
+#section1_maintenance_sign{
+    width: 97.7vw;
+    opacity: 0.7;
+}
+
+#section2_header{
+  margin-top: -12.75vw;
+}
+
+#section3_header, #section4_header{
+}
+
+#section10_header{
+
+}
+
+/* general class for section header, replaces the above text-align: center*/
+.sectionheader{
+  text-align: center;
+  font-size: 4.02vw;
+  font-weight: 300;
+  padding-left: 2.23vw;
+  padding-right: 2.23vw;
+}
+
+/*
+ * -----------------OTHER SECTION-----------------
+ */
+
+#image{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    width: 200vw;
+    height: 25.7vw;
+    opacity: 0.1;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    object-fit: cover;
+    /*clip: rect(0, 100vw, 25.7vw, 0);*/
+}
+
+.image_wrapper{
+  position: absolute;
+  left: -1vw;
+  width: 101vw;
+  height: 25.7vw;
+  overflow: hidden;
+}
+
+.info{
+  text-align: center;
+  /*padding-left: 2.23vw;*/
+  font-size: 2.23vw;
+}
+
+.return{
+  font-size: 2vw;
+  font-weight: 400;
+  border-radius: 3vw;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 25vw;
+  text-align: center;
+}
+
+.return:link{
+  color: #00f;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.return:visited{
+  color: #00f;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.return:hover{
+  font-weight: 500;
+  color: #00f;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.return:active{
+  color: #f00;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.return_wrapper{
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+}
+
+/*
+ * -----------------SECTION 2 CONTENTS SECTION-----------------
+ */
+
+#section2_image1{
+  opacity: 0.7;
+  padding: 3vw;
+  height: 25vw;
+}
+
+.section2_outside_flex{
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section2_inside_flex{
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#section2_part1{
+    margin-top: -3vw;
+    line-height: 6vw;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 30vw;
+}
+
+#section2_part2{
+  margin-top: 1.5vw;
+    line-height: 3vw;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 60vw;
+}
+
+/*
+ * -----------------SECTION 3 CONTENTS SECTION-----------------
+ */
+
+.section3_part1{
+   /*background-color: rgba(255, 255, 255, 0.5);*/
+   /*border-radius: 0.83vw;*/
+   padding-bottom: 5vw;
+   padding-top: 0vw;
+   margin-top: -2vw;
+   /*border-style: solid;
+   border-color: #0c0;*/
+
+}
+
+.section3_part2{
+    line-height: 0.5rem;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 30vw;
+}
+
+.section3_part3{
+    line-height: 0.5rem;
+    text-align: left;
+    /*border: 0.33vw solid gray;*/
+    width: 60vw;
+}
+
+.section3_title{
+    font-family: 'DengXian Bold', sans-serif;
+    font-size: 2.8vw;
+    font-weight: 500;
+    line-height: 0.5vw;
+}
+
+.section3_minititle{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.6vw;
+    font-weight: 100;
+    line-height: 2.5vw;
+    padding-top: 0vw;
+    margin-top: -1vw;
+    font-style: italic;
+}
+
+.section3_text{
+  font-family: 'DengXian Light', sans-serif;
+  font-size: 1.8vw;
+  font-weight: 100;
+  line-height: 2.5vw;
+}
+
+.section3_spacer{
+  font-family: 'DengXian Light', sans-serif;
+  font-size: 0.5vw;
+  line-height: 1.2vw;
+  font-weight: 500;
+}
+
+.section3_outside_flex{
+   flex: 1;
+   display: flex;
+   overflow: auto;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.section3_inside_flex{
+   display: flex;
+   margin: auto;
+   flex-flow: row wrap;
+   justify-content: center;
+   /*height: 25vw;*/
+}
+
+.section3_image1{
+  opacity: 0.7;
+  padding: 1vw;
+  width: 25vw;
+  padding-left: 4vw;
+}
+
+.section3_image2{
+  opacity: 0.7;
+  padding: 1vw;
+  width: 25vw;
+  padding-left: 0vw;
+  padding-right: 4vw;
+  padding-top: 5vw;
+}
+
+.section3_image3{
+  opacity: 0.7;
+  padding: 1vw;
+  width: 25vw;
+  padding-left: 4vw;
+  padding-top: 5vw;
+}
+
+#section3_image3_wrapper{
+  padding-top: 0vw;
+  margin-top: -1vw;
+}
+
+/*
+ * -----------------SECTION 4 CONTENTS SECTION-----------------
+ */
+
+#section4_part1{
+   /*background-color: rgba(255, 255, 255, 0.5);*/
+   /*border-radius: 0.83vw;*/
+   padding-bottom: 5vw;
+   padding-top: 0vw;
+   margin-top: -2vw;
+   /*border-style: solid;
+   border-color: #0c0;*/
+
+}
+
+.section4_part2{
+   line-height: 0.5rem;
+   text-align: center;
+   /*border: 0.33vw solid gray;*/
+   width: 30vw;
+   /*border-style: solid;
+   border-color: #0c0;*/
+}
+
+.section4_part2:hover{
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.section4_part2_wide:hover{
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.section4_part2_wide{
+   line-height: 0.5rem;
+   text-align: center;
+   /*border: 0.33vw solid gray;*/
+   width: 90vw;
+   /*border-style: solid;
+   border-color: #0c0;*/
+}
+
+.section4_title{
+    font-family: 'DengXian Bold', sans-serif;
+    font-size: 2.8vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+}
+
+.section4_text{
+  font-family: 'DengXian Light', sans-serif;
+  font-size: 1.8vw;
+  font-weight: 100;
+  line-height: 2.5vw;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+}
+
+.section4_miniheader{
+    font-family: 'DengXian Bold', sans-serif;
+    font-size: 1.8vw;
+}
+
+.section4_outside_flex{
+   flex: 1;
+   display: flex;
+   overflow: auto;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.section4_inside_flex{
+   display: flex;
+   margin: auto;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+.section4_italic{
+  font-style:italic;
+}
+
+.section4_nohover:hover{
+    color: black;
+    border-style: none;
+    border-color: #fff;
+}
+
+.section4_image{
+  margin-top: -1vw; /* not -3.25vw */
+  width: 15vw;
+}
+
+.section4_image2{
+  margin-top: 0vw; /* not -3.25vw */
+  width: 70vw;
+}
+
+
+ /*
+  * -----------------SECTION 5 CONTENTS SECTION-----------------
+  */
+
+#section5_part1{
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    /*border-radius: 0.83vw;*/
+    padding-bottom: 5vw;
+    padding-top: 0vw;
+    margin-top: -2vw;
+    /*border-style: solid;
+    border-color: #0c0;*/
+
+}
+
+.section5_part2{
+    line-height: 0.5rem;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 30vw;
+}
+
+.section5_medium{
+    font-size: 2.4vw;
+    line-height: 2.67vw;
+}
+
+.section5_big{
+    font-size: 8vw;
+    font-weight: 100;
+    line-height: 0vw;
+    margin-top: 9vw;
+    color: #0000aa;
+}
+
+.section5_outside_flex{
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section5_inside_flex{
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.section5_inline{
+    font-size: 3.6vw;
+    line-height: 2.67vw;
+}
+
+/*
+ * -----------------SECTION 6 CONTENTS SECTION-----------------
+ */
+
+.section6_part1{
+   /*background-color: rgba(255, 255, 255, 0.5);*/
+   /*border-radius: 0.83vw;*/
+   padding-top: 0vw;
+   margin-top: -2vw;
+   /*border-style: solid;
+   border-color: #0c0;*/
+
+}
+
+.section6_part2{
+    line-height: 0.5rem;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 30vw;
+}
+
+.section6_part3{
+    line-height: 0.5rem;
+    text-align: left;
+    /*border: 0.33vw solid gray;*/
+    width: 60vw;
+}
+
+.section6_title{
+    font-family: 'DengXian Bold', sans-serif;
+    font-size: 2.8vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+}
+
+.section6_minititle{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.6vw;
+    font-weight: 100;
+    line-height: 2.5vw;
+    padding-top: 0vw;
+    margin-top: -2vw;
+    font-style: italic;
+}
+
+.section6_text{
+  font-family: 'DengXian Light', sans-serif;
+  font-size: 1.8vw;
+  font-weight: 100;
+  line-height: 2.5vw;
+}
+
+.section6_spacer{
+  font-family: 'DengXian Bold', sans-serif;
+  font-size: 0.5vw;
+  line-height: 1.2vw;
+  font-weight: 500;
+}
+
+.section6_outside_flex{
+   flex: 1;
+   display: flex;
+   overflow: auto;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.section6_inside_flex{
+   display: flex;
+   margin: auto;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+.section6_image1{
+  opacity: 0.7;
+  padding: 1vw;
+  width: 25vw;
+  padding-left: 4vw;
+  padding-top: 5vw;
+}
+
+.section6_image2{
+    opacity: 0.7;
+    padding: 1vw;
+    width: 25vw;
+    padding-left: 0vw;
+    padding-right: 4vw;
+    padding-top: 5.5vw;
+}
+
+.section6_image3{
+  opacity: 0.7;
+  padding: 1vw;
+  width: 25vw;
+  padding-left: 4vw;
+  padding-top: 13.5vw;
+}
+
+.section6_image4{
+  opacity: 0.7;
+  padding: 1vw;
+  width: 25vw;
+  padding-left: 0vw;
+  padding-right: 4vw;
+  padding-top: 9vw;
+}
+
+.section6_part2{
+    line-height: 0.5rem;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 30vw;
+}
+
+.section6_part3{
+    line-height: 0.5rem;
+    text-align: left;
+    /*border: 0.33vw solid gray;*/
+    width: 60vw;
+}
+
+/*
+ * -----------------SECTION 7 CONTENTS SECTION-----------------
+ */
+
+#section7_part1{
+   /*background-color: rgba(255, 255, 255, 0.5);*/
+   /*border-radius: 0.83vw;*/
+   padding-bottom: 5vw;
+   padding-top: 0vw;
+   margin-top: -2vw;
+   /*border-style: solid;
+   border-color: #0c0;*/
+
+}
+
+.section7_part2{
+    line-height: 0.5rem;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 30vw;
+}
+
+.section7_part3{
+    line-height: 0.5rem;
+    text-align: left;
+    /*border: 0.33vw solid gray;*/
+    width: 60vw;
+}
+
+.section7_title{
+    font-family: 'DengXian Bold', sans-serif;
+    font-size: 2.8vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+}
+
+.section7_minititle{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.6vw;
+    font-weight: 100;
+    line-height: 2.5vw;
+    padding-top: 0vw;
+    margin-top: -2vw;
+    font-style: italic;
+}
+
+.section7_text{
+  font-family: 'DengXian Light', sans-serif;
+  font-size: 1.8vw;
+  font-weight: 100;
+  line-height: 2.5vw;
+}
+
+.section7_spacer{
+  font-family: 'DengXian Bold', sans-serif;
+  font-size: 0.5vw;
+  line-height: 1.2vw;
+  font-weight: 500;
+}
+
+.section7_outside_flex{
+   flex: 1;
+   display: flex;
+   overflow: auto;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.section7_inside_flex{
+   display: flex;
+   margin: auto;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+#section7_image1{
+    opacity: 0.7;
+    padding: 1vw;
+    width: 25vw;
+    padding-left: 4vw;
+}
+
+.section7_image2{
+    opacity: 0.7;
+    padding: 1vw;
+    width: 25vw;
+    padding-left: 0vw;
+    padding-right: 4vw;
+    padding-top: 5.5vw;
+}
+
+.section7_part2{
+    line-height: 0.5rem;
+    text-align: center;
+    /*border: 0.33vw solid gray;*/
+    width: 30vw;
+}
+
+.section7_part3{
+    line-height: 0.5rem;
+    text-align: left;
+    /*border: 0.33vw solid gray;*/
+    width: 60vw;
+}
+
+/*
+ * -----------------SECTION 8 CONTENTS SECTION-----------------
+ */
+
+#section8_part1{
+   /*background-color: rgba(255, 255, 255, 0.5);*/
+   /*border-radius: 0.83vw;*/
+   padding-bottom: 5vw;
+   padding-top: 0vw;
+   margin-top: -2vw;
+   /*border-style: solid;
+   border-color: #0c0;*/
+
+}
+
+.section8_part5{
+    line-height: 0.5rem;
+    text-align: left;
+    /*border: 0.33vw solid gray;*/
+    width: 90vw;
+}
+
+.section8_title{
+    font-family: 'DengXian Bold', sans-serif;
+    font-size: 2.8vw;
+    font-weight: 500;
+    line-height: 2.8vw;
+}
+
+.section8_minititle{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.6vw;
+    font-weight: 100;
+    line-height: 1.5vw;
+    padding-top: 0vw;
+    margin-top: -1.7vw;
+    font-style: italic;
+}
+
+.section8_paragraph{
+    font-family: 'DengXian Light', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 100;
+    line-height: 2.5vw;
+}
+
+.section8_spacer{
+  font-family: 'DengXian Bold', sans-serif;
+  font-size: 0.5vw;
+  line-height: 1.2vw;
+  font-weight: 500;
+}
+
+.section8_outside_flex{
+   flex: 1;
+   display: flex;
+   overflow: auto;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.section8_inside_flex{
+   display: flex;
+   margin: auto;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+.section8_link{
+  padding:0vw;
+}
+
+/*
+ * -----------------SECTION 10 CONTENTS SECTION-----------------
+ */
+
+ .section10_link{
+   padding:0vw;
+ }
+
+/*
+ * Paste Bin
+ */

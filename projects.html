@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta name="description" content="page name">
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Robert Yang</title>
+        <link rel="stylesheet" href="introduction.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class = "flex-container">
+            <header id = "menu">
+                <h1>Robert Yang</h1>
+                <nav>
+                    <ul>
+                        <li id = "nav-about"><a href = "introduction.html">Home</a></li>
+                        <li id = "nav-projects"><a href = "projects.html">Experience and Projects</a></li>
+                        <li id = "nav-skills"><a href = "skills.html">Skills</a></li>
+                        <li id = "nav-fastfacts"><a href = "fastfacts.html">Fast Facts</a></li>
+                        <li id = "nav-leadership"><a href = "leadership.html">Leadership</a></li>
+                        <li id = "nav-news"><a href = "awards.html">Awards</a></li>
+                        <li id = "nav-news"><a href = "news.html">News</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id = "section3" class = "section_class">
+                <h2 id = "section3_header" class = "sectionheader"> <span class = "boundingbox"> Projects </span> </h2>
+                <article class = "section3_part1">
+                    <section class = "section3_outside_flex">
+                        <section class = "section3_inside_flex">
+                            <section class = "section3_part2">
+                                <img class = "section3_image2" src="section3_image12.png">
+                            </section>
+                            <section class = "section3_part3">
+                                <p class = "section3_spacer"> &nbsp; </p>
+                                <p class = "section3_title"> Research Assistant in Stanford Geophysics</p>
+                                <p class = "section3_title"> (2020)</p>
+                                <p class = "section3_minititle"> Skills involved: Computer Vision, Deep Learning, Graphics, Python</p>
+                                <!--<p class = "section3_text">I designed, implemented, and tuned a 5-layer Deep Neural Network (DNN) using NumPy and Keras to predict mood based on everyday habits. The main challenge I faced was finding ways to regularize the network to minimize overfitting, because of the small amount of data (40 data points from my partners' diary, each with 11 features). Given the data, I surprisingly managed to get fairly good results: most predictions were within 1 or 2 points from the ground truth on the test set. </p>-->
+                                <p class = "section3_text">I fine-tuned a Mask-RCNN model using Keras and TensorFlow to precisely detect and correct deflections in signal in order to recover decades of unreadable image data. To do so, I developed automated generation of analog seismogram images to produce a 6,405-image synthetic dataset in COCO format using over 10,000 hours of data. </p>
+                            </section>
+                        </section>
+                    </section>
+                </article>
+                <article class = "section3_part1">
+                    <section class = "section3_outside_flex">
+                        <section class = "section3_inside_flex">
+                            <section class = "section3_part3">
+                                <p class = "section3_spacer"> &nbsp; </p>
+                                <p class = "section3_title"> Personal Project: Classical Music Period</p>
+                                <p class = "section3_title"> Classification</p>
+                                <p class = "section3_minititle"> Skills involved: Signal Processing, Computer Vision, Deep Learning, Python</p>
+                                <p class = "section3_text">This was a one-day project I did out of curiosity if an AI could hear (or, it turned out, see) the difference between different periods of classical music (Baroque, Classical, Romantic, 20th-Century). Using STFT techniques I learned in Summer 2019, I converted recordings of classical music into images and generated a 3200-image dataset. Using preprocessing functions and the baseline ResNet50 model from the fastai library, I was able to quickly fine-tune a classifier with over 90% val accuracy and 85% test accuracy. (Previous results in this area had 39% accuracy but on a different dataset. In the future, I will evaluate my model on that dataset for comparison to that paper.)</p>
+                            </section>
+                            <section class = "section3_part2">
+                                <img class = "section3_image1" src="section3_image11.png">
+                            </section>
+                        </section>
+                    </section>
+                </article>
+                <article class = "section3_part1">
+                    <section class = "section3_outside_flex">
+                        <section class = "section3_inside_flex">
+                            <section class = "section3_part2">
+                                <img class = "section3_image2" src="ganime.png">
+                            </section>
+                            <section class = "section3_part3">
+                                <p class = "section3_spacer"> &nbsp; </p>
+                                <p class = "section3_title"> GANime: Generating Manga/Anime Character </p>
+                                <p class = "section3_title"> Sketches From Drawings</p>
+                                <p class = "section3_minititle"> Skills involved: Generative Models, Computer Vision, Deep Learning, Python</p>
+                                <!--<p class = "section3_text">I designed, implemented, and tuned a 5-layer Deep Neural Network (DNN) using NumPy and Keras to predict mood based on everyday habits. The main challenge I faced was finding ways to regularize the network to minimize overfitting, because of the small amount of data (40 data points from my partners' diary, each with 11 features). Given the data, I surprisingly managed to get fairly good results: most predictions were within 1 or 2 points from the ground truth on the test set. </p>-->
+                                <p class = "section3_text">I collaborated with my friend Tai on this project. Using TensorFlow 2, Python, Google Colab, and AWS, we developed and compared the performance of three models (Neural Style Transfer, Pix2Pix, and CycleGAN) and in their ability to generate fully colorized drawings from sketches. On a sample size of 100, we achieved a FID of 220.5 and a SSIM index of 0.76 using Pix2Pix, the best model for this problem according to our evaluation. We produced a paper <a class="section8_link" href="http://cs230.stanford.edu/projects_winter_2020/reports/32226261.pdf">here</a>, and a 3-minute summary video <a class="section8_link" href="https://www.youtube.com/watch?v=QVQIPFAeGrU&feature=youtu.be">here</a>.</p>
+                            </section>
+                        </section>
+                    </section>
+                </article>
+                <article class = "section3_part1">
+                    <section class = "section3_outside_flex">
+                        <section class = "section3_inside_flex">
+                            <section class = "section3_part3">
+                                <p class = "section3_spacer"> &nbsp; </p>
+                                <p class = "section3_title"> Research Assistant in Stanford Geophysics</p>
+                                <p class = "section3_title"> (2019)</p>
+                                <p class = "section3_minititle"> Skills involved: Computer Vision, Signal Processing, Machine Learning, Data Analysis, Python</p>
+                                <p class = "section3_text">Last summer, I worked on earthquake signal processing and detection at Stanford Geophysics, where I used Python (ObsPy, NumPy, SciPy, Matplotlib, and cv2) to build a data pipeline to process (denoise) the data and subsequently detect extremely small earthquakes in the data that are difficult to find even with human expertise. The data was noisy and I used signal processing techniques such as filtering in order to remove unwanted noise but preserve useful signal. Then, by first converting the signal into frequency domain images, I was able to apply computer vision to detect and amplify edges in the signal which signified earthquakes. I then used machine learning (K-means clustering) to cluster patches of the signal into "earthquake" and "non-earthquake" signal, which allowed me to use the clusters to identify earthquake picks for new data.</p>
+                            </section>
+                            <section class = "section3_part2">
+                                <img class = "section3_image1" src="section3_image1.png">
+                                <img class = "section3_image1" src="section3_image3.png">
+                                <img class = "section3_image1" src="section3_image4.png">
+                            </section>
+                        </section>
+                    </section>
+                </article>
+                <article class = "section3_part1">
+                    <section class = "section3_outside_flex">
+                        <section class = "section3_inside_flex">
+                            <section class = "section3_part2">
+                                <img class = "section3_image2" src="section3_image5.png">
+                            </section>
+                            <section class = "section3_part3">
+                                <p class = "section3_spacer"> &nbsp; </p>
+                                <p class = "section3_title"> TreeHacks 2019</p>
+                                <p class = "section3_minititle"> Skills involved: Deep Learning, Python</p>
+                                <!--<p class = "section3_text">I designed, implemented, and tuned a 5-layer Deep Neural Network (DNN) using NumPy and Keras to predict mood based on everyday habits. The main challenge I faced was finding ways to regularize the network to minimize overfitting, because of the small amount of data (40 data points from my partners' diary, each with 11 features). Given the data, I surprisingly managed to get fairly good results: most predictions were within 1 or 2 points from the ground truth on the test set. </p>-->
+                                <p class = "section3_text">I designed, implemented, and tuned a 5-layer Deep Neural Network (DNN) using NumPy and Keras to predict mood based on everyday habits. I managed to get fairly good results: most predictions were within 1 or sometimes 2 points on a 10-point scale from the ground truth on the test set. My teammates made an iOS app for the mood predictor where users could enter in their habits (sleep, amount of exercise, etc.) for a certain day. I then used CoreMLTools to ship the deep learning model to the iOS app using CoreMLTools.</p>
+                            </section>
+                        </section>
+                    </section>
+                </article>
+                <article class = "section3_part1">
+                    <section class = "section3_outside_flex">
+                        <section class = "section3_inside_flex">
+                            <section class = "section3_part3">
+                                <p class = "section3_spacer"> &nbsp; </p>
+                                <p class = "section3_title"> Chatbot</p>
+                                <p class = "section3_minititle"> Skills involved: Web Design, Language Processing, Data Structures, Probability, HTML, CSS, JavaScript</p>
+                                <p class = "section3_text">For fun, I designed a chatting interface from scratch using HTML, CSS, and JavaScript. Then, I created a chatbot AI using a decision tree and a knowledge base of vocabulary words which would respond to user messages. For a more dynamic experience, in the newer versions, the chatbot has simulated emotions which influence its messages. In one version, the emotions are modeled using a Markov chain. In the newest version, the simulation was modeled using a subset of the PAD model in psychology. Probability was utilized to simulate small changes in emotion, as well as some influence from the user's messages. Future versions would include a more dynamic version of emotion simulation which would place more weight on the influence of the user's sentiment.</p>
+                            </section>
+                            <section class = "section3_part2" id = "section3_image3_wrapper">
+                                <img class = "section3_image3" src="section3_image8.png">
+                            </section>
+                        </section>
+                    </section>
+                </article>
+                <section class = "return_wrapper">
+                    <p><a class = "return" href = "#menu">Teleport to menu</a></p>
+                </section>
+            </section>
+        </div>
+    </body>
+</html>
