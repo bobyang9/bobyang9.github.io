@@ -127,13 +127,14 @@ span:hover{
 
 #section2_header{
   margin-top: -12.75vw;
+  margin-bottom: 0.5vw;
 }
 
 #section3_header, #section4_header{
 }
 
 #section10_header{
-
+    margin-bottom: 5vw;
 }
 
 /* general class for section header, replaces the above text-align: center*/
@@ -143,6 +144,7 @@ span:hover{
   font-weight: 300;
   padding-left: 2.23vw;
   padding-right: 2.23vw;
+  margin-bottom: 0.5vw;
 }
 
 /*
@@ -173,6 +175,7 @@ span:hover{
   text-align: center;
   /*padding-left: 2.23vw;*/
   font-size: 2.23vw;
+  margin-bottom: 0vw;
 }
 
 .return{
@@ -219,6 +222,7 @@ span:hover{
 #section2_image1{
   opacity: 0.7;
   padding: 3vw;
+  margin-top: 5.3vw;
   height: 25vw;
 }
 
